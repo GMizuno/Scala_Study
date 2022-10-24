@@ -9,6 +9,10 @@ object OOBasics extends App{
   person.greet("Gabriel")
   person.greetThis("Gabriel")
   person.greet()
+
+  val count = Counter(100)
+  count.inc.inc.print
+  count.inc(10).inc.dec(21).print
 }
 
 // Classes parameters are not fields (can not acess person.age) class Person(name: String, age: Int)
@@ -25,5 +29,16 @@ class Person(name: String, val age: Int) { // Constructor => __init__ in Python
   // Multiple constructors => Not use
   def this(name: String) = this(name, 0)
   def this() = this("Perez", 30)
+}
+
+class Counter(val count: Int) {
+
+  def inc = new Counter(count + 1)
+  def dec = new Counter(count - 1)
+
+  def inc(n: Int) = new Counter(count + n)
+  def dec(n: Int) = new Counter(count - n)
+
+  def print = println(this.count)
 }
 
