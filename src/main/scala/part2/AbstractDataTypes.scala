@@ -29,6 +29,6 @@ object AbstractDataTypes extends App{
   croc.eat(dog)
 
   // 1 - Traits do not have constructos parameters
-  // 2 - Multiple traits may be inherited by the smae class
+  // 2 - Multiple traits may be inherited by the same class
   // 3 - traits = behavior, abstract class = "thing"
 }

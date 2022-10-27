@@ -15,7 +15,7 @@ object OOBasics extends App{
   count.inc(10).inc.dec(21).print
 }
 
-// Classes parameters are not fields (can not acess person.age) class Person(name: String, age: Int)
+// Classes parameters are not fields (can not be acess => person.age) class Person(name: String, age: Int)
 // Classes filed can be acess class Person(name: String, val age: Int)
 class Person(name: String, val age: Int) { // Constructor => __init__ in Python
   val x = 2 // Field can be acess

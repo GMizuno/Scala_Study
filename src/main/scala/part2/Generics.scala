@@ -19,7 +19,7 @@ object Generics extends App{
     // def empty[A]: MyList[A] = ????
   }
 
-  val emptyListOfInterger = MyList.empty[Int]
+  // val emptyListOfInterger = MyList.empty[Int]
 
   // Variance Problem
   class Animal
