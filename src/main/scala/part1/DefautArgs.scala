@@ -18,4 +18,6 @@ object DefautArgs extends App {
 
   val fac10_2 = factorial(n = 10, acc = 1)
   println(fac10_2)
+
+  val facimport = factorial(3)
 }
