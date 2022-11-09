@@ -9,7 +9,7 @@ object AnonnyousFunction extends App {
   println(doubler(2))
   println(doubler2(4))
 
-  // MUltiple parameters
+  // Multiple parameters
   val adder: (Int, Int) => Int = (a: Int, b: Int) => a + b
 
   // no parameter
